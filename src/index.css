@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+
+.productCat::-webkit-scrollbar{
+    display: none;
+}
