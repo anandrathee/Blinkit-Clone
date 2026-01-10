@@ -1,12 +1,14 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { CiSearch } from "react-icons/ci";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaLeftRight } from 'react-icons/fa6';
+import { ProductContext } from '../context/Context';
 
 
 
 const Navbar = () => {
+ const {cartData} = useContext(ProductContext)
   const intervalRef = useRef(null);
   const searchData = ["paneer", "rice", "chocolate", "milk", "bread", "butter"]; // ✅ FIXED
   const [currentIndex, setCurrentIndex] = useState(0); // ✅ ADD
@@ -46,8 +48,20 @@ const Navbar = () => {
             </div>
             <div className="cart w-1/2 h-full flex items-center justify-center">
             <div className="cartButton w-28 h-13 flex items-center justify-center gap-2 bg-green-600 rounded-lg">
-              <MdOutlineShoppingCart className='text-2xl text-white' />
-              <h1 className='font-bold text-sm text-white'>My Cart</h1>
+             {
+              cartData.length > 0 ? (
+                <h1 className='font-bold text-sm text-white'>Items</h1>
+              ):(
+                 <MdOutlineShoppingCart className='text-2xl text-white' />
+              )
+             }
+              {
+                cartData.length > 0 ? (
+                  <h1 className='font-bold text-sm text-white'>{cartData.length}</h1>
+                ):(
+                  <h1 className='font-bold text-sm text-white'>My Cart</h1>
+                )
+              }
 
             </div>
             </div>

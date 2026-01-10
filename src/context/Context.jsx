@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useEffect, useState } from 'react'
 import {productItems, bannerItems} from '../Data/ProductsData'
 // import {bData} from '../Data/BannerData'
 
@@ -18,9 +18,15 @@ const Context = ({children}) => {
     "Hookah",
     "Mouth fresheners",
   ])
+  
+  const [cartData, setCartData] = useState([])
+  useEffect(()=>{
+    console.log(cartData)
+    
+ }, [cartData])
 
   return (
-    <ProductContext.Provider value={{productData, setProductData, bannerData, setBannerData, categories, setCategories}}>{children}</ProductContext.Provider>
+    <ProductContext.Provider value={{productData, setProductData, bannerData, setBannerData, categories, setCategories, cartData, setCartData}}>{children}</ProductContext.Provider>
   )
 }
 
