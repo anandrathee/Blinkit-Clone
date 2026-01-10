@@ -5,12 +5,12 @@ import { ProductContext } from '../context/Context';
 
 
 const ProductCard = ({value}) => {
-    const {title, weight, image, actualPrice, discountedPrice, discount } = value;
+    const {title, weight, image, actualPrice, discountedPrice, discount, category } = value;
 
-     const {} =   useContext(ProductContext)
+    //  const {} =   useContext(ProductContext)
     
   return (
-    <Link to="/home/" className='w-48 h-70 p-2 border border-zinc-300 rounded-lg flex flex-col items-center gap-2 relative shrink-0 '>
+    <Link to={`/${category}/${title}`} className='w-48 h-70 p-2 border border-zinc-300 rounded-lg flex flex-col items-center gap-2 relative shrink-0 '>
        
         {discount > 0 ? (
             <div className='discountBadge w-8 h-8 absolute top-0 rounded-b-2xl left-4 text-center text-white bg-blue-400 overflow-hidden'>

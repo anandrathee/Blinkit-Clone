@@ -18,6 +18,7 @@ const Context = ({children}) => {
     "Hookah",
     "Mouth fresheners",
   ])
+
   return (
     <ProductContext.Provider value={{productData, setProductData, bannerData, setBannerData, categories, setCategories}}>{children}</ProductContext.Provider>
   )
