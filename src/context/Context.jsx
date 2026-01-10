@@ -10,8 +10,16 @@ const Context = ({children}) => {
 
 
     const [productData, setProductData] = useState(productItems);
+
+    const [categories, setCategories] = useState([
+    "Dairy, Bread & Eggs",
+    "Rolling paper & tobacco",
+    "Snacks & Munchies",
+    "Hookah",
+    "Mouth fresheners",
+  ])
   return (
-    <ProductContext.Provider value={{productData, setProductData, bannerData, setBannerData}}>{children}</ProductContext.Provider>
+    <ProductContext.Provider value={{productData, setProductData, bannerData, setBannerData, categories, setCategories}}>{children}</ProductContext.Provider>
   )
 }
 

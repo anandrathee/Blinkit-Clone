@@ -1,6 +1,57 @@
-export const productItems = [
-      {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/5fa5744b-c0ae-4a9f-9f3e-1834aa2d66f0.png", title: "Theobroma Cookie Brownie", weight: "60 g", actualPrice: "₹95", discountedPrice: "₹86", isAdded: false, category: "Dairy, Bread & Eggs", discount: 9},
 
+export const bannerItems = [
+    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png", title: "Paan Corner"},
+    
+    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png", title: "Dairy, Bread & Eggs"},
+
+    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-3_9.png", title: "Fruits & Vegetables"},
+
+    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-4_9.png", title: "Cold Drinks & Juices"},
+
+    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-5_4.png", title: "Snacks & Munchies"},
+
+    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-6_5.png", title: "Breakfast & Instant Food"},
+
+    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-7_3.png", title: "Sweet Tooth"},
+
+    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-8_4.png", title: "Bakery & Biscuits"},
+
+    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2025-11/Slice-7-1_0.png", title: "Tea, Coffee & Milk Drinks"},
+
+    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-10.png", title: "Atta, Rice & Dal"},
+
+    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-11.png", title: "Masala, Oil & More"},
+
+    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-12.png", title: "Sauces & Spreads"},
+
+    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-13.png", title: "Chicken, Meat & Fish"},
+
+    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-14.png", title: "Organic & Healthy Living"},
+
+    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-15.png", title: "Baby Care"},
+
+    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-16.png", title: "Pharma & Wellness"},
+
+    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-17.png", title: "Cleaning Essentials"},
+
+    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-18.png", title: "Home & Office"},
+
+    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-19.png", title: "Personal Care"},
+
+    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-20.png", title: "Pet Care"},
+];
+
+
+export const productItems = [
+    
+    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=450/da/cms-assets/cms/product/628c97e0-5ed4-425d-a667-1d3bfa6f0bde.png", title: "Amul Gold Full Cream Milk", weight: "500 ml", actualPrice: "₹35", discountedPrice: "₹0", isAdded: false, category: "Dairy, Bread & Eggs", discount: 0},
+    
+    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/5fa5744b-c0ae-4a9f-9f3e-1834aa2d66f0.png", title: "Theobroma Cookie Brownie", weight: "60 g", actualPrice: "₹95", discountedPrice: "₹86", isAdded: false, category: "Dairy, Bread & Eggs", discount: 9},
+    
+    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=450/da/cms-assets/cms/product/b881881b-6cdf-4283-b851-b46fd28eaef7.png", title: "Mother Dairy Mishti Doi", weight: "80 g", actualPrice: "₹20", discountedPrice: "₹0", isAdded: false, category: "Dairy, Bread & Eggs", discount: 0},
+    
+    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=450/da/cms-assets/cms/product/c1d65f38-031a-4028-8bf6-a5fc2f0e288d.png", title: "Mother Dairy Full Cream Milk", weight: "500 ml", actualPrice: "₹35", discountedPrice: "₹0", isAdded: false, category: "Dairy, Bread & Eggs", discount: 0},
+    
       {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/6264a4c6-23f0-4599-8077-1d40283ee173.png", title: "Theobroma Eggless Choco Chip Brownie", weight: "65 g", actualPrice: "₹95", discountedPrice: "₹86", isAdded: false, category: "Dairy, Bread & Eggs", discount: 9},
 
       {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/d870b6fb-cc2d-4efb-b904-7c7e71e76cb8.png", title: "Theobroma Zero Maida Multigrain Bread", weight: "250 g", actualPrice: "₹70", discountedPrice: "₹63", isAdded: true, category: "Dairy, Bread & Eggs", discount: 10},
@@ -67,47 +118,23 @@ export const productItems = [
 
       {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/4b68a346-c80f-48de-9a5f-556fb75db7bd.png", title: 'Handcrafted Wooden Pipe (Colour May Vary) by Pravāh', weight: "1 unit", actualPrice: "₹490", discountedPrice: "₹", isAdded: false, category: "Hookah", discount: 0},
 
-    ]
+      {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/5e3c91b8-cc08-42b8-b7c5-872738bd614d.png", title: 'Kapiva Organic Gulkand', weight: "300 g", actualPrice: "₹515", discountedPrice: "₹439", isAdded: false, category: "Mouth fresheners", discount: 14},
 
+      {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/61e21313-bdbc-4d60-a3a3-1e6ebf60a1f8.png", title: 'SURILI Aam Papad Mukhvas Mouth Freshener', weight: "200 g", actualPrice: "₹270", discountedPrice: "₹225", isAdded: false, category: "Mouth fresheners", discount: 16},
 
-export const bannerItems = [
-    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png", title: "Paan Corner"},
-    
-    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png", title: "Dairy, Bread & Eggs"},
+      {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/2f00f451-ec5a-40a3-b50a-47289a493ccd.png", title: 'Mr. Merchant Paan Shots', weight: "200 g", actualPrice: "₹300", discountedPrice: "₹269", isAdded: false, category: "Mouth fresheners", discount: 10},
 
-    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-3_9.png", title: "Fruits & Vegetables"},
+      {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/81f4729a-5429-42e7-955c-8d65867f1ab7.png", title: 'Swad Paan Shots Mukhwas Mouth Freshener', weight: "150 g", actualPrice: "₹299", discountedPrice: "₹289", isAdded: false, category: "Mouth fresheners", discount: 0},
 
-    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-4_9.png", title: "Cold Drinks & Juices"},
+      {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/f0bdc8a8-f6ec-4954-9dd8-4b3f409b1591.png", title: '7 Bazaari Banarasi Paan (Belgian Chocolate)', weight: "10 pieces", actualPrice: "₹349", discountedPrice: "₹₹299", isAdded: false, category: "Mouth fresheners", discount: 14},
 
-    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-5_4.png", title: "Snacks & Munchies"},
+      {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/32251654-8ff5-448e-ac20-65d19ea820a4.png", title: 'Mr. Merchant White Madrasi Mint Saunf Mouth Freshener', weight: "300 g", actualPrice: "₹259", discountedPrice: "₹₹300", isAdded: false, category: "Mouth fresheners", discount: 13},
 
-    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-6_5.png", title: "Breakfast & Instant Food"},
+      {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/98bb3033-f4e2-4cd2-850f-1262ea761c69.png", title: 'Dizzle Royal Rajwadi Mukhwas Mouth Freshener', weight: "210 g", actualPrice: "₹240", discountedPrice: "₹205", isAdded: false, category: "Mouth fresheners", discount: 14},
 
-    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-7_3.png", title: "Sweet Tooth"},
+      {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/3dbed3d7-4caa-4560-8bbf-4e95fc5b5048.png", title: 'Dizzle Shahi Sonff Mix Mouth Freshener', weight: "180 g", actualPrice: "₹175", discountedPrice: "₹150", isAdded: false, category: "Mouth fresheners", discount: 14},
 
-    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-8_4.png", title: "Bakery & Biscuits"},
+      {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/a4131d86-b495-4afc-96a8-73c1d10ed8b1.png", title: 'SURILI Digestive Mukhvas Mouth Freshener with Ajwain Aids', weight: "150 g", actualPrice: "₹315", discountedPrice: "₹225", isAdded: false, category: "Mouth fresheners", discount: 28},
 
-    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2025-11/Slice-7-1_0.png", title: "Tea, Coffee & Milk Drinks"},
+    ];
 
-    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-10.png", title: "Atta, Rice & Dal"},
-
-    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-11.png", title: "Masala, Oil & More"},
-
-    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-12.png", title: "Sauces & Spreads"},
-
-    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-13.png", title: "Chicken, Meat & Fish"},
-
-    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-14.png", title: "Organic & Healthy Living"},
-
-    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-15.png", title: "Baby Care"},
-
-    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-16.png", title: "Pharma & Wellness"},
-
-    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-17.png", title: "Cleaning Essentials"},
-
-    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-18.png", title: "Home & Office"},
-
-    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-19.png", title: "Personal Care"},
-
-    {image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-20.png", title: "Pet Care"},
-]

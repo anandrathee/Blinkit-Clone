@@ -1,16 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import ProductCard from "../partials/ProductCard";
 import ProductCategories from "../partials/ProductCategories";
+import { ProductContext } from "../context/Context";
 
 const Products = () => {
-  const categories = [
-    "Dairy, Bread & Eggs",
-    "Rolling paper & tobacco",
-    "Snacks & Munchies",
-    "Hookah",
-    "Mouth fresheners",
-  ];
+ const {categories} =   useContext(ProductContext)
   return (
     
       <>
@@ -24,7 +19,7 @@ const Products = () => {
               <ProductCategories item={item} />
             </div>
           </div>
-        ))}
+        ))}6
       </>
   
   );
