@@ -13,7 +13,6 @@ const ProductCard = ({ value, handleBtn }) => {
     actualPrice,
     discountedPrice,
     discount,
-    category,
     isAdded,
     sNo,
   } = value;

@@ -5,6 +5,7 @@ import Banner from './partials/Banner'
 import Navbar from './partials/Navbar'
 import Products from './components/Products'
 import ItemDetails from './components/ItemDetails'
+import Sr from './components/Sr'
 
 const App = () => {
   return (
@@ -16,9 +17,11 @@ const App = () => {
             <Home>
               <Banner/>
               <Products/>
+             
             </Home>
           }/>
           <Route path='/:category/:title' element={<ItemDetails />} />
+          <Route path='/sr' element={<Sr/>}/>
         </Route>
       </Routes>
     </>

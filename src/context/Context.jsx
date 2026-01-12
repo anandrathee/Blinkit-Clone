@@ -20,13 +20,17 @@ const Context = ({children}) => {
   ])
   
   const [cartData, setCartData] = useState([])
+
+  const [filteredProducts, setFilteredProducts] = useState([])
+  console.log(filteredProducts)
+
   useEffect(()=>{
-    console.log(cartData)
+    // console.log(cartData)
     
  }, [cartData])
 
   return (
-    <ProductContext.Provider value={{productData, setProductData, bannerData, setBannerData, categories, setCategories, cartData, setCartData}}>{children}</ProductContext.Provider>
+    <ProductContext.Provider value={{productData, setProductData, bannerData, setBannerData, categories, setCategories, cartData, setCartData, filteredProducts, setFilteredProducts}}>{children}</ProductContext.Provider>
   )
 }
 

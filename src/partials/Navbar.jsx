@@ -8,7 +8,7 @@ import { ProductContext } from '../context/Context';
 
 
 const Navbar = () => {
- const {cartData} = useContext(ProductContext)
+ const {productData, cartData, setFilteredProducts} = useContext(ProductContext)
   const intervalRef = useRef(null);
   const searchData = ["paneer", "rice", "chocolate", "milk", "bread", "butter"]; // ✅ FIXED
   const [currentIndex, setCurrentIndex] = useState(0); // ✅ ADD
@@ -19,6 +19,23 @@ const Navbar = () => {
   }, 1500);
   return () => clearInterval(intervalRef.current);
 }, []);
+
+
+ const handleChange = (e) => {
+    const searchValue = e.target.value.toLowerCase().trim();
+    
+    if (searchValue === '') {
+      setFilteredProducts([]);  // ✅ Empty array jab search clear ho
+    } else {
+      // ✅ Sirf matching products filter kar
+      const filtered = productData.filter(product => 
+        product.title.toLowerCase().includes(searchValue)
+        // product.category.toLowerCase().includes(searchValue)
+      );
+      setFilteredProducts(filtered);
+    }
+  }
+
 
 
   return (
@@ -35,11 +52,17 @@ const Navbar = () => {
         <div className="search relative w-172 h-auto bg-slate-50 border border-zinc-200 rounded-xl pl-3 flex items-center justify-center">
           <CiSearch  className='text-2xl font-bold' />
 
-            <input 
+            <Link to="/sr" className='w-full h-12 pl-2 outline-none text-zinc-600'>
+            {
+              <input 
+            
+            onChange={handleChange}
   className='w-full h-12 pl-2 outline-none text-zinc-600' 
   type="text" 
   placeholder={`Search "${searchData[currentIndex]}"`}  // ✅ ROTATES!
 />
+            }
+            </Link>
 
         </div>
         <div className="loginCart w-80.75 h-full flex items-center justify-center">
@@ -48,16 +71,12 @@ const Navbar = () => {
             </div>
             <div className="cart w-1/2 h-full flex items-center justify-center">
             <div className="cartButton w-28 h-13 flex items-center justify-center gap-2 bg-green-600 rounded-lg">
-             {
-              cartData.length > 0 ? (
-                <h1 className='font-bold text-sm text-white'>Items</h1>
-              ):(
+            
                  <MdOutlineShoppingCart className='text-2xl text-white' />
-              )
-             }
+             
               {
                 cartData.length > 0 ? (
-                  <h1 className='font-bold text-sm text-white'>{cartData.length}</h1>
+                  <h1 className='font-bold  text-white'>{cartData.length} Items</h1>
                 ):(
                   <h1 className='font-bold text-sm text-white'>My Cart</h1>
                 )
