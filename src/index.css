@@ -4,3 +4,17 @@
 .productCat::-webkit-scrollbar{
     display: none;
 }
+
+.itemDetials{
+    height:calc(100vh - 86px);
+}
+/* .cartPage{
+    height:calc(100vh - 86px);
+} */
+
+
+
+.cartScroll::-webkit-scrollbar{
+    display: none;
+    scroll-behavior: smooth;
+}

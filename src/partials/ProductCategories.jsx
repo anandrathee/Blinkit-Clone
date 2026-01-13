@@ -5,7 +5,7 @@ import ProductCard from './ProductCard'
 
 const ProductCategories = ({item}) => {
   // console.log(item.toLowerCase())
-     const {productData, setProductData, setCartData} = useContext(ProductContext)
+     const {productData, setProductData, setCartData, setUpdateQty} = useContext(ProductContext)
 
      const filteredData = productData.filter(elem => elem.category.toLowerCase() === item.toLowerCase())
     //  console.log(filteredData)
@@ -14,7 +14,11 @@ const ProductCategories = ({item}) => {
     setProductData(prev => 
       prev.map((product) => {
         if (product.sNo === sNo) {  // ✅ sNo match
-          const updatedItem = { ...product, isAdded: !product.isAdded }
+          const updatedItem = { 
+            ...product, isAdded: !product.isAdded
+            
+           }
+           setUpdateQty(updatedItem)
           
           if (updatedItem.isAdded) {
             // Add to cart
@@ -35,7 +39,7 @@ const ProductCategories = ({item}) => {
     <div className='productCat flex gap-4 items-center justify-start mt-5 overflow-x-auto'>
          {
       filteredData.map((item,index)=>(
-        <ProductCard key={index} value={item} handleBtn={handleBtn}/>
+        <ProductCard key={index} value={item} handleBtn={handleBtn} setCartData={setCartData}/>
       ))
     }
     </div>

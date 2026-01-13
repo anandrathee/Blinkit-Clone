@@ -5,7 +5,9 @@ import Banner from './partials/Banner'
 import Navbar from './partials/Navbar'
 import Products from './components/Products'
 import ItemDetails from './components/ItemDetails'
+import Footer from './components/Footer'
 import Sr from './components/Sr'
+import Cart from './components/Cart'
 
 const App = () => {
   return (
@@ -16,14 +18,16 @@ const App = () => {
           <Route index element={
             <Home>
               <Banner/>
-              <Products/>
-             
+              <Products/>             
             </Home>
           }/>
           <Route path='/:category/:title' element={<ItemDetails />} />
           <Route path='/sr' element={<Sr/>}/>
         </Route>
+        {/* <Route path="/cart" element={<Cart/>}/> */}
+        
       </Routes>
+      <Footer/>
     </>
   )
 }
